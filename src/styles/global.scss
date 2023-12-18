@@ -1,0 +1,154 @@
+body {
+    background: var(--bg);
+    font-size: 16px;
+    line-height: 16px;
+    font-family: Montserrat, Roboto, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    color: #fff;
+    font-weight: 400;
+    padding-bottom: 1.25rem;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+  
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+img {
+max-width: 100%;
+height: auto;
+}
+
+input,
+button {
+border: none;
+background: none;
+outline: none;
+color: #fff;
+font-size: 16px;
+font-family: Montserrat, Roboto, sans-serif;
+}
+
+a {
+color: #fff;
+text-decoration: none;
+}
+
+ul,
+li {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+.app-container {
+    padding: 0 15px;
+    @media (min-width: 575.98px){
+        padding: 0 calc(50vw - 270px);
+    }
+    @media (min-width: 767.98px){
+        padding: 0 calc(50vw - 360px);
+    }
+    @media (min-width: 991.98px){
+        padding: 0 calc(50vw - 480px);
+    }
+    @media (min-width: 1199.98px){
+        padding: 0 calc(50vw - 590px);
+    }
+}
+/*
+OR
+.app-container {
+    padding: 0 15px;
+    @media (min-width: 575.98px){
+        max-width: 540px;
+        margin: auto;
+        padding: 0;
+    }
+    @media (min-width: 767.98px){
+        max-width: 720px;
+    }
+    @media (min-width: 991.98px){
+        max-width: 960px;
+    }
+    @media (min-width: 1199.98px){
+        max-width: 1140px;
+    }
+}
+*/
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: .875rem;
+    height: .875rem;
+}
+
+section {
+    background: var(--dark);
+    border-radius: 6px;
+}
+
+button {
+    background: var(--violet-dark);
+    border-radius: .4rem;
+    padding: .56rem 1.25rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--violet);
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+input {
+    padding: 0;
+}
+
+.preloader {
+    flex-grow: 1;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
