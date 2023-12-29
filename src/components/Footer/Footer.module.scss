@@ -1,0 +1,26 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--total-pad);
+}
+.rights{
+    color: var(--grey);
+    font-size: .8rem;
+}
+.rights a{
+    margin-left: .5rem;
+    color: var(--violet-dark);
+}
+.socials{
+    display: flex;
+    column-gap: .5em;
+}
+.socials svg{
+    width: 25px;
+    height: 25px;
+    fill: var(--dark-sea);
+}
+.socials svg:hover{
+    fill: var(--violet);
+}
